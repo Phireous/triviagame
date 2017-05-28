@@ -26,65 +26,65 @@
 
 		var t = $(".timer");
 
-		var question1 = $("<p>").text("Insert question 1 here");
+		var question1 = $("<p>").text("What is the longest running animated series on TV?");
 
-		var answers1 = {answer1: $("<button class='wrong'>").html("wrong1"),
-		answer2: $("<button class='correct'>").html("correct"),
-		answer3: $("<button class='wrong'>").html("wrong2"),
-		answer4: $("<button class='wrong'>").html("wrong3")
+		var answers1 = {answer1: $("<button class='wrong'>").html("Looney Toons"),
+		answer2: $("<button class='correct'>").html("The Simpsons"),
+		answer3: $("<button class='wrong'>").html("Family Guy"),
+		answer4: $("<button class='wrong'>").html("South Park")
 		}
 
-		var question2 = $("<p>").text("Insert question 2 here");
+		var question2 = $("<p>").text("what color do you get if you mix blue and yellow?");
 
-		var answers2 = {answer1: $("<button class='wrong'>").html("wrong1"),
+		var answers2 = {answer1: $("<button class='wrong'>").html("blellow"),
+		answer2: $("<button class='wrong'>").html("brown"),
+		answer3: $("<button class='correct'>").html("green"),
+		answer4: $("<button class='wrong'>").html("orange")
+		}
+
+		var question3 = $("<p>").text("Which one is the right answer?");
+
+		var answers3 = {answer1: $("<button class='correct'>").html("this one"),
+		answer2: $("<button class='wrong'>").html("not this one"),
+		answer3: $("<button class='wrong'>").html("not this one either"),
+		answer4: $("<button class='wrong'>").html("dont pick me")
+		}
+
+		var question4 = $("<p>").text("Find Waldo!");
+
+		var answers4 = {answer1: $("<button class='wrong'>").html("cold"),
+		answer2: $("<button class='wrong'>").html("warmer"),
+		answer3: $("<button class='wrong'>").html("getting hot"),
+		answer4: $("<button class='correct'>").html("<img src='assets/images/4yRcS2Zo.png' width='100'/>")
+		}
+
+		var question5 = $("<p>").text("Who was considered to be the 'father' of American anthropology?");
+
+		var answers5 = {answer1: $("<button class='wrong'>").html("Ruth Benidict"),
+		answer2: $("<button class='correct'>").html("Franz Boas"),
+		answer3: $("<button class='wrong'>").html("A. L. Kroeber"),
+		answer4: $("<button class='wrong'>").html("Edward Sapir")
+		}
+
+		var question6 = $("<p>").text("Wow, that last questiong am I right? Here's a freebie just pick number 1.");
+
+		var answers6 = {answer1: $("<button class='correct'>").html("1"),
+		answer2: $("<button class='wrong'>").html("2"),
+		answer3: $("<button class='wrong'>").html("3"),
+		answer4: $("<button class='wrong'>").html("4")
+		}
+
+		var question7 = $("<p>").text("Who da best?");
+
+		var answers7 = {answer1: $("<button class='wrong'>").html("I da best!"),
 		answer2: $("<button class='wrong'>").html("wrong"),
-		answer3: $("<button class='correct'>").html("correct"),
-		answer4: $("<button class='wrong'>").html("wrong3")
-		}
-
-		var question3 = $("<p>").text("Insert question 3 here");
-
-		var answers3 = {answer1: $("<button class='correct'>").html("correct"),
-		answer2: $("<button class='wrong'>").html("wrong"),
 		answer3: $("<button class='wrong'>").html("wrong2"),
-		answer4: $("<button class='wrong'>").html("wrong3")
-		}
-
-		var question4 = $("<p>").text("Insert question 4 here");
-
-		var answers4 = {answer1: $("<button class='wrong'>").html("wrong1"),
-		answer2: $("<button class='wrong'>").html("wrong"),
-		answer3: $("<button class='wrong'>").html("wrong2"),
-		answer4: $("<button class='correct'>").html("correct")
-		}
-
-		var question5 = $("<p>").text("Insert question 5 here");
-
-		var answers5 = {answer1: $("<button class='wrong'>").html("wrong1"),
-		answer2: $("<button class='correct'>").html("correct"),
-		answer3: $("<button class='wrong'>").html("wrong2"),
-		answer4: $("<button class='wrong'>").html("wrong3")
-		}
-
-		var question6 = $("<p>").text("Insert question 6 here");
-
-		var answers6 = {answer1: $("<button class='correct'>").html("correct"),
-		answer2: $("<button class='wrong'>").html("wrong"),
-		answer3: $("<button class='wrong'>").html("wrong2"),
-		answer4: $("<button class='wrong'>").html("wrong3")
-		}
-
-		var question7 = $("<p>").text("Insert question 7 here");
-
-		var answers7 = {answer1: $("<button class='wrong'>").html("wrong1"),
-		answer2: $("<button class='wrong'>").html("wrong"),
-		answer3: $("<button class='wrong'>").html("wrong2"),
-		answer4: $("<button class='correct'>").html("correct")
+		answer4: $("<button class='correct'>").html("I da best!")
 		}
 
 		
 		function q1(){
-			time = 5;
+			time = 10;
 			t.html(time);
 			q.html(question1);
 			a.empty();
@@ -133,21 +133,21 @@
 		}
 
 		function q1w() {
-			q.html("INCORRECT THE ANSWER IS: ");
+			q.html("INCORRECT THE ANSWER IS: The Simpsons");
 			t.empty();
 			a.empty();
 			setTimeout(q2, 3000);
 		}
 
 		function q1t() {
-			q.html("TIMES UP THE ANSWER IS: ");
+			q.html("TIMES UP THE ANSWER IS: The Simpsons");
 			t.empty();
 			a.empty();
 			setTimeout(q2, 3000);
 		}
 
 		function q2(){
-			time = 5;
+			time = 10;
 			t.html(time);
 			q.html(question2);
 			a.empty();
@@ -195,14 +195,14 @@
 		}
 
 		function q2w() {
-			q.html("INCORRECT THE ANSWER IS: ");
+			q.html("INCORRECT THE ANSWER IS: green");
 			t.empty();
 			a.empty();
 			setTimeout(q3, 3000);
 		}
 
 		function q2t() {
-			q.html("TIMES UP THE ANSWER IS: ");
+			q.html("TIMES UP THE ANSWER IS: green");
 			t.empty();
 			a.empty();
 			setTimeout(q3, 3000);
@@ -210,7 +210,7 @@
 
 
 		function q3(){
-			time = 5;
+			time = 10;
 			t.html(time);
 			q.html(question3);
 			a.empty();
@@ -258,14 +258,14 @@
 		}
 
 		function q3w() {
-			q.html("INCORRECT THE ANSWER IS: ");
+			q.html("INCORRECT THE ANSWER IS: this one");
 			t.empty();
 			a.empty();
 			setTimeout(q4, 3000);
 		}
 
 		function q3t() {
-			q.html("TIMES UP THE ANSWER IS: ");
+			q.html("TIMES UP THE ANSWER IS: this one");
 			t.empty();
 			a.empty();
 			setTimeout(q4, 3000);
@@ -273,7 +273,7 @@
 
 
 		function q4(){
-			time = 5;
+			time = 10;
 			t.html(time);
 			q.html(question4);
 			a.empty();
@@ -321,14 +321,14 @@
 		}
 
 		function q4w() {
-			q.html("INCORRECT THE ANSWER IS: ");
+			q.html("WOW, HOW DID YOU MISS THAT ONE?");
 			t.empty();
 			a.empty();
 			setTimeout(q5, 3000);
 		}
 
 		function q4t() {
-			q.html("TIMES UP THE ANSWER IS: ");
+			q.html("TIMES UP! PRETTY SLOW ON THE CLICK HUH?");
 			t.empty();
 			a.empty();
 			setTimeout(q5, 3000);
@@ -336,7 +336,7 @@
 
 
 		function q5(){
-			time = 5;
+			time = 10;
 			t.html(time);
 			q.html(question5);
 			a.empty();
@@ -384,14 +384,14 @@
 		}
 
 		function q5w() {
-			q.html("INCORRECT THE ANSWER IS: ");
+			q.html("INCORRECT THE ANSWER IS: Franz Boas");
 			t.empty();
 			a.empty();
 			setTimeout(q6, 3000);
 		}
 
 		function q5t() {
-			q.html("TIMES UP THE ANSWER IS: ");
+			q.html("TIMES UP THE ANSWER IS: Franz Boas");
 			t.empty();
 			a.empty();
 			setTimeout(q6, 3000);
@@ -399,7 +399,7 @@
 
 
 		function q6(){
-			time = 5;
+			time = 10;
 			t.html(time);
 			q.html(question6);
 			a.empty();
@@ -447,14 +447,14 @@
 		}
 
 		function q6w() {
-			q.html("INCORRECT THE ANSWER IS: ");
+			q.html("INCORRECT THE ANSWER IS: 1");
 			t.empty();
 			a.empty();
 			setTimeout(q7, 3000);
 		}
 
 		function q6t() {
-			q.html("TIMES UP THE ANSWER IS: ");
+			q.html("TIMES UP THE ANSWER IS: 1");
 			t.empty();
 			a.empty();
 			setTimeout(q7, 3000);
@@ -462,11 +462,11 @@
 
 
 		function q7(){
-			time = 5;
+			time = 10;
 			t.html(time);
 			q.html(question7);
 			a.empty();
-			a.append(answers7.answer1, " ", answers7.answer2, " ", answers7.answer3, " ", answers7.answer4);
+			a.append(answers7.answer4);
 
 			function countDown() {
 				time--;
@@ -517,7 +517,7 @@
 		}
 
 		function q7t() {
-			q.html("TIMES UP THE ANSWER IS: ");
+			q.html("TIMES UP THE ANSWER IS: you da best!");
 			t.empty();
 			a.empty();
 			setTimeout(tally, 3000);
